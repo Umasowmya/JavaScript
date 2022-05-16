@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storage Options</title>
+    </head>
+
+    <body>
+
+        <h1>Storage</h1>
+        <button  value="Add" type = "submit" name = "add" onclick="addlocal()">Add</button>
+
+        <button  value="Add" type = "submit" name = "add" onclick="addsessionl()">Add</button>
+
+        <script>
+
+            var l=0;            
+            
+
+            function addlocal(){
+                l++;
+                localStorage.setItem(l,1)
+               
+                
+            }
+
+            var s=0;
+
+            function addsessionl(){
+
+                s++;
+                sessionStorage.setItem(s,1)
+                
+
+
+            }
+        
+        </script>
+
+    </body>
+
+
+</html>
+
